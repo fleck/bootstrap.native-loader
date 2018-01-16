@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap.native-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for bootstrap.native",
+  "main": "index.js",
+  "author": "Jonathan Fleckenstein",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "bootstrap.native": "^2.0.21"
+  }
+}
