@@ -1,7 +1,19 @@
-const { execSync } = require('child_process')
+const bsn3 = require('bootstrap.native/build-module.js')
+const bsn = require('bootstrap.native/build-module-v4.js')
+const { getOptions } = require('loader-utils');
 
 module.exports = function () {
   this.cacheable = true
-  const source = execSync('node node_modules/bootstrap.native/build-v4.js --only modal')
-  return 'module.exports = ' + source
+  const callback = this.async();
+  const options = getOptions(this) || {}
+
+  if (this.options.bsVersion === 3) {
+    bsn = bsn3
+  }
+
+  bsn(options).then((source) => {
+    callback(null, 'module.exports = ' + source)
+  }).catch((error) => {
+    callback(error)
+  })
 }

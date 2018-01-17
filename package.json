@@ -10,8 +10,7 @@
     "standard": "^10.0.3"
   },
   "peerDependencies": {
-    "bootstrap.native": "^2.0.21",
-    "onchange": "^3.0.2",
-    "yargs": "^5.0.0"
-  }
+    "bootstrap.native": "^2.0.21"
+  },
+  "dependencies": {}
 }
