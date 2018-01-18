@@ -1,13 +1,19 @@
 {
   "name": "bootstrap.native-loader",
-  "version": "1.0.3",
+  "version": "1.0.4 ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanfleckenstein/bootstrap.native-loader"
+  },
   "description": "Webpack loader for bootstrap.native",
   "main": "index.js",
   "author": "Jonathan Fleckenstein",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "standard": "^10.0.3"
+    "bootstrap.native": "^2.0.21",
+    "memory-fs": "^0.4.1",
+    "standard": "^10.0.3",
+    "webpack": "^3.10.0"
   },
   "peerDependencies": {
     "bootstrap.native": "^2.0.21"
