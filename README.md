@@ -3,7 +3,7 @@
 This is a webpack loader for [bootstrap.native](https://github.com/thednp/bootstrap.native).
 
 ```
-yarn add bootstrap.native
+yarn add https://github.com/thednp/bootstrap.native.git#641148791eb03a68014b0b9857530a5a91299e56
 ```
 ```
 yarn add --dev bootstrap.native-loader
