@@ -12,7 +12,7 @@ module.exports = function () {
   }
 
   bsn(options).then((source) => {
-    callback(null, 'module.exports = ' + source)
+    callback(null, source)
   }).catch((error) => {
     callback(error)
   })
