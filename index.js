@@ -7,7 +7,7 @@ module.exports = function () {
   const callback = this.async()
   const options = getOptions(this) || {}
 
-  if (this.options.bsVersion === 3) {
+  if (options.bsVersion === 3) {
     bsn = bsn3
   }
 
