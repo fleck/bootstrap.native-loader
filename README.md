@@ -42,6 +42,11 @@ Also, an ignore option. (cannot be used at the same time as the only option)
   }
 }
 ```
+A full list of components that can be listed under ignore or only are shown below. 
+```javascript
+['alert', 'button',  'carousel', 'collapse', 'dropdown', 'modal', 'popover', 'scrollspy', 'tab', 'tooltip']
+```
+
 Once you have the above setup in your add the code below to include the custom build in your bundle.
 ```
 import 'bootstrap.native';
