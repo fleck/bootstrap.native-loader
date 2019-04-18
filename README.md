@@ -25,6 +25,7 @@ There's also an only option. (cannot be used at the same time as the ignore opti
   use: {
     loader: 'bootstrap.native-loader',
     options: {
+      bs_version: 4,
       only: ['modal', 'dropdown']
     }
   }
@@ -37,6 +38,7 @@ Also, an ignore option. (cannot be used at the same time as the only option)
   use: {
     loader: 'bootstrap.native-loader',
     options: {
+      bs_version: 4,
       ignore: ['carousel', 'button']
     }
   }
