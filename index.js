@@ -1,15 +1,11 @@
-const bsn3 = require('bootstrap.native/build-module.js')
-let bsn = require('bootstrap.native/build-module-v4.js')
+const bsn = require('bootstrap.native/lib/build-module.js')
 const { getOptions } = require('loader-utils')
 
 module.exports = function () {
   this.cacheable = true
   const callback = this.async()
   const options = getOptions(this) || {}
-
-  if (options.bsVersion === 3) {
-    bsn = bsn3
-  }
+  options.bs_version = options.bs_version || 4;
 
   bsn(options).then((source) => {
     callback(null, source)
