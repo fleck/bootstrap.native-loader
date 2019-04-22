@@ -16,7 +16,7 @@
     "webpack": "^3.10.0"
   },
   "peerDependencies": {
-    "bootstrap.native": "^2.0.21"
+    "bootstrap.native": "^2.0.26"
   },
   "dependencies": {
     "loader-utils": "^1.2.3"
